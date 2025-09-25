@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+	<PackageManifest Version="2.0.0" xmlns="http://schemas.microsoft.com/developer/vsx-schema/2011" xmlns:d="http://schemas.microsoft.com/developer/vsx-schema-design/2011">
+		<Metadata>
+			<Identity Language="en-US" Id="bio-data-hub" Version="1.4.4" Publisher="Mubashir-Ali" />
+			<DisplayName>Bio-Data-Hub</DisplayName>
+			<Description xml:space="preserve">Bioinformatics CSV data exploration extension for VS Code</Description>
+			<Tags>bioinformatics,csv,data science,data visualization,machine learning,data analysis,research tool,data exploration,data mining,data management,genomics,previewCSV,metadata,proteomics,biotechnology,big data,data processing,data analytics,metagenomics,genome sequencing,computational biology,csv viewer,biostatistics,omics,data transformation,data cleaning,biological data,vsce,genetic analysis,dna analysis,rna sequencing,NGS analysis,bioinformatics tools,clinical data,health informatics,scientific computing,keybindings,__sponsor_extension</Tags>
+			<Categories>Visualization,Azure,Chat,Data Science,Debuggers,Extension Packs,Education,Formatters,Keymaps,Language Packs,Linters,Machine Learning,Notebooks,Programming Languages,SCM Providers,Snippets,Testing,Themes,Other</Categories>
+			<GalleryFlags>Public</GalleryFlags>
+			
+			<Properties>
+				<Property Id="Microsoft.VisualStudio.Code.Engine" Value="^1.64.0" />
+				<Property Id="Microsoft.VisualStudio.Code.ExtensionDependencies" Value="" />
+				<Property Id="Microsoft.VisualStudio.Code.ExtensionPack" Value="" />
+				<Property Id="Microsoft.VisualStudio.Code.ExtensionKind" Value="workspace" />
+				<Property Id="Microsoft.VisualStudio.Code.LocalizedLanguages" Value="" />
+				<Property Id="Microsoft.VisualStudio.Code.EnabledApiProposals" Value="" />
+				
+				<Property Id="Microsoft.VisualStudio.Code.ExecutesCode" Value="true" />
+				<Property Id="Microsoft.VisualStudio.Code.SponsorLink" Value="https://patreon.com/mubashir1837" />
+				<Property Id="Microsoft.VisualStudio.Services.Links.Source" Value="https://github.com/mubashir1837/BioDataHub.git" />
+				<Property Id="Microsoft.VisualStudio.Services.Links.Getstarted" Value="https://github.com/mubashir1837/BioDataHub.git" />
+				<Property Id="Microsoft.VisualStudio.Services.Links.GitHub" Value="https://github.com/mubashir1837/BioDataHub.git" />
+				<Property Id="Microsoft.VisualStudio.Services.Links.Support" Value="https://github.com/mubashir1837/BioDataHub/issues" />
+				<Property Id="Microsoft.VisualStudio.Services.Links.Learn" Value="https://github.com/mubashir1837/BioDataHub#readme" />
+				
+				
+				<Property Id="Microsoft.VisualStudio.Services.GitHubFlavoredMarkdown" Value="true" />
+				<Property Id="Microsoft.VisualStudio.Services.Content.Pricing" Value="Free"/>
+
+				
+				
+			</Properties>
+			<License>extension/LICENSE.txt</License>
+			<Icon>extension/resources/logo.jpg</Icon>
+		</Metadata>
+		<Installation>
+			<InstallationTarget Id="Microsoft.VisualStudio.Code"/>
+		</Installation>
+		<Dependencies/>
+		<Assets>
+			<Asset Type="Microsoft.VisualStudio.Code.Manifest" Path="extension/package.json" Addressable="true" />
+			<Asset Type="Microsoft.VisualStudio.Services.Content.Details" Path="extension/readme.md" Addressable="true" />
+<Asset Type="Microsoft.VisualStudio.Services.Content.Changelog" Path="extension/changelog.md" Addressable="true" />
+<Asset Type="Microsoft.VisualStudio.Services.Content.License" Path="extension/LICENSE.txt" Addressable="true" />
+<Asset Type="Microsoft.VisualStudio.Services.Icons.Default" Path="extension/resources/logo.jpg" Addressable="true" />
+		</Assets>
+	</PackageManifest>

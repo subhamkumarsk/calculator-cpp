@@ -1,0 +1,361 @@
+{
+	"name": "local-logger",
+	"displayName": "AI Usage Tracker - Team Productivity Analytics",
+	"description": "🚀 The #1 VS Code extension for automated AI productivity tracking. Transform manual CSV logging into professional team analytics. Tracks GitHub Copilot, Claude, Devin, Cursor & more with real-time insights, automatic CSV export, and team collaboration features.",
+	"version": "1.1.0",
+	"preview": false,
+	"engines": {
+		"vscode": "^1.74.0"
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/gaurabh-chakraborty/local-logger-extension"
+	},
+	"publisher": "GaurabhChakraborty",
+	"license": "MIT",
+	"icon": "images/icon.png",
+	"galleryBanner": {
+		"color": "#0078d4",
+		"theme": "dark"
+	},
+	"qna": "marketplace",
+	"homepage": "https://github.com/gaurabh-chakraborty/local-logger-extension/blob/main/README.md",
+	"bugs": {
+		"url": "https://github.com/gaurabh-chakraborty/local-logger-extension/issues",
+		"email": "support@example.com"
+	},
+	"badges": [
+		{
+			"url": "https://img.shields.io/vscode-marketplace/v/GaurabhChakraborty.local-logger?label=VS%20Code%20Marketplace&logo=visual-studio-code",
+			"href": "https://marketplace.visualstudio.com/items?itemName=GaurabhChakraborty.local-logger",
+			"description": "VS Code Marketplace Version"
+		},
+		{
+			"url": "https://img.shields.io/vscode-marketplace/d/GaurabhChakraborty.local-logger?logo=visual-studio-code",
+			"href": "https://marketplace.visualstudio.com/items?itemName=GaurabhChakraborty.local-logger",
+			"description": "Total Downloads"
+		},
+		{
+			"url": "https://img.shields.io/badge/AI%20Tools-Supported-brightgreen",
+			"href": "https://github.com/gaurabh-chakraborty/local-logger-extension#supported-ai-tools",
+			"description": "Supports multiple AI tools"
+		},
+		{
+			"url": "https://img.shields.io/badge/Data%20Export-CSV-blue",
+			"href": "https://github.com/gaurabh-chakraborty/local-logger-extension#csv-export",
+			"description": "Exports to CSV format"
+		}
+	],
+	"categories": [
+		"Data Science",
+		"Other",
+		"Debuggers",
+		"Machine Learning"
+	],
+	"keywords": [
+		"ai tracking",
+		"productivity analytics",
+		"github copilot",
+		"claude ai",
+		"devin agent",
+		"cursor ai",
+		"team metrics",
+		"ai productivity",
+		"usage analytics",
+		"time tracking",
+		"developer tools",
+		"ai impact measurement",
+		"team collaboration",
+		"data export",
+		"csv automation",
+		"ai tools monitoring",
+		"development analytics",
+		"productivity insights"
+	],
+	"activationEvents": [
+		"onStartupFinished"
+	],
+	"main": "./out/extension.js",
+	"contributes": {
+		"commands": [
+			{
+				"command": "productivityTracker.viewDashboard",
+				"title": "View Productivity Dashboard",
+				"category": "Productivity Tracker",
+				"icon": "$(dashboard)"
+			},
+			{
+				"command": "productivityTracker.exportReport",
+				"title": "Export Productivity Report",
+				"category": "Productivity Tracker",
+				"icon": "$(file-text)"
+			},
+			{
+				"command": "localLogger.startAISession",
+				"title": "Start AI Session Tracking",
+				"category": "AI Logger",
+				"icon": "$(play)"
+			},
+			{
+				"command": "localLogger.endAISession",
+				"title": "End AI Session",
+				"category": "AI Logger",
+				"icon": "$(stop)"
+			},
+			{
+				"command": "localLogger.exportToCSV",
+				"title": "Export AI Usage to CSV",
+				"category": "AI Logger",
+				"icon": "$(file-text)"
+			},
+			{
+				"command": "localLogger.viewAIUsageDashboard",
+				"title": "View AI Usage Dashboard",
+				"category": "AI Logger",
+				"icon": "$(graph)"
+			},
+			{
+				"command": "localLogger.quickSetup",
+				"title": "Quick Setup AI Tracking",
+				"category": "AI Logger",
+				"icon": "$(gear)"
+			},
+			{
+				"command": "productivityTracker.toggleTracking",
+				"title": "Toggle Tracking",
+				"category": "Productivity Tracker",
+				"icon": "$(record)"
+			},
+			{
+				"command": "productivityTracker.setSprintGoal",
+				"title": "Set Sprint Goal",
+				"category": "Productivity Tracker",
+				"icon": "$(target)"
+			},
+			{
+				"command": "productivityTracker.logChallenge",
+				"title": "Log Development Challenge",
+				"category": "Productivity Tracker",
+				"icon": "$(warning)"
+			},
+			{
+				"command": "productivityTracker.trackAIUsage",
+				"title": "Track AI Tool Usage",
+				"category": "Productivity Tracker",
+				"icon": "$(robot)"
+			},
+			{
+				"command": "productivityTracker.reviewCodeQuality",
+				"title": "Review Code Quality Metrics",
+				"category": "Productivity Tracker",
+				"icon": "$(check-all)"
+			},
+			{
+				"command": "productivityTracker.clearData",
+				"title": "Clear Tracking Data",
+				"category": "Productivity Tracker",
+				"icon": "$(trash)"
+			}
+		],
+		"keybindings": [
+			{
+				"command": "localLogger.startAISession",
+				"key": "ctrl+alt+s",
+				"mac": "cmd+alt+s",
+				"when": "editorTextFocus"
+			},
+			{
+				"command": "localLogger.endAISession",
+				"key": "ctrl+alt+e",
+				"mac": "cmd+alt+e",
+				"when": "editorTextFocus"
+			},
+			{
+				"command": "localLogger.exportToCSV",
+				"key": "ctrl+alt+x",
+				"mac": "cmd+alt+x"
+			},
+			{
+				"command": "localLogger.viewAIUsageDashboard",
+				"key": "ctrl+alt+d",
+				"mac": "cmd+alt+d"
+			}
+		],
+		"menus": {
+			"commandPalette": [
+				{
+					"command": "localLogger.startAISession",
+					"when": "true"
+				},
+				{
+					"command": "localLogger.endAISession",
+					"when": "true"
+				},
+				{
+					"command": "localLogger.exportToCSV",
+					"when": "true"
+				},
+				{
+					"command": "localLogger.viewAIUsageDashboard",
+					"when": "true"
+				},
+				{
+					"command": "localLogger.quickSetup",
+					"when": "true"
+				}
+			]
+		},
+		"configuration": {
+			"title": "Team Productivity Tracker",
+			"properties": {
+				"productivityTracker.enabled": {
+					"type": "boolean",
+					"default": true,
+					"description": "Enable or disable productivity tracking"
+				},
+				"productivityTracker.teamName": {
+					"type": "string",
+					"default": "",
+					"description": "Name of your development team"
+				},
+				"productivityTracker.sprintDuration": {
+					"type": "number",
+					"default": 14,
+					"description": "Sprint duration in days"
+				},
+				"productivityTracker.trackAIUsage": {
+					"type": "boolean",
+					"default": true,
+					"description": "Track AI tool usage (Copilot, ChatGPT, etc.)"
+				},
+				"productivityTracker.trackCodeQuality": {
+					"type": "boolean",
+					"default": true,
+					"description": "Track code quality metrics"
+				},
+				"productivityTracker.trackTimeSpent": {
+					"type": "boolean",
+					"default": true,
+					"description": "Track time spent on different activities"
+				},
+				"productivityTracker.autoExportReports": {
+					"type": "boolean",
+					"default": true,
+					"description": "Automatically export weekly/sprint reports"
+				},
+				"productivityTracker.showInStatusBar": {
+					"type": "boolean",
+					"default": true,
+					"description": "Show productivity metrics in status bar"
+				},
+				"productivityTracker.trackDebugging": {
+					"type": "boolean",
+					"default": true,
+					"description": "Track debugging sessions and breakpoint usage"
+				},
+				"productivityTracker.trackTesting": {
+					"type": "boolean",
+					"default": true,
+					"description": "Track test writing and execution"
+				},
+				"productivityTracker.trackGitActivity": {
+					"type": "boolean",
+					"default": true,
+					"description": "Track Git commits, merges, and pull requests"
+				},
+				"productivityTracker.challengeCategories": {
+					"type": "array",
+					"items": {
+						"type": "string"
+					},
+					"default": [
+						"Technical Debt",
+						"Complex Logic",
+						"Integration Issues",
+						"Performance",
+						"Dependencies",
+						"Testing",
+						"Documentation",
+						"Code Review",
+						"Deployment",
+						"Other"
+					],
+					"description": "Categories for development challenges"
+				},
+				"productivityTracker.excludePatterns": {
+					"type": "array",
+					"items": {
+						"type": "string"
+					},
+					"default": [
+						"**/node_modules/**",
+						"**/.git/**",
+						"**/out/**",
+						"**/dist/**",
+						"**/build/**",
+						"**/.vscode/**"
+					],
+					"description": "File patterns to exclude from tracking"
+				},
+				"productivityTracker.aiTracking.defaultTeam": {
+					"type": "string",
+					"default": "",
+					"description": "Default team name for AI usage tracking"
+				},
+				"productivityTracker.aiTracking.defaultIndividual": {
+					"type": "string",
+					"default": "",
+					"description": "Default individual name for AI usage tracking"
+				},
+				"productivityTracker.aiTracking.autoDetectTools": {
+					"type": "boolean",
+					"default": true,
+					"description": "Automatically detect AI tool usage patterns"
+				},
+				"productivityTracker.csvExport.autoSync": {
+					"type": "boolean",
+					"default": false,
+					"description": "Automatically sync data to team CSV file"
+				},
+				"productivityTracker.csvExport.teamSheetPath": {
+					"type": "string",
+					"default": "",
+					"description": "Path to team's shared CSV file for automatic syncing"
+				}
+			}
+		}
+	},
+	"scripts": {
+		"vscode:prepublish": "npm run compile",
+		"compile": "tsc -p ./",
+		"watch": "tsc -watch -p ./",
+		"pretest": "npm run compile && npm run lint",
+		"lint": "eslint src --ext ts",
+		"test": "node ./out/test/runTest.js",
+		"package": "vsce package",
+		"deploy": "vsce publish",
+		"clean": "rimraf out *.vsix",
+		"dev": "npm run clean && npm run compile && npm run package",
+		"release:patch": "npm version patch && npm run package",
+		"release:minor": "npm version minor && npm run package",
+		"release:major": "npm version major && npm run package",
+		"check": "npm run lint && npm run compile && npm test",
+		"prepare-release": "npm run check && npm run package",
+		"local-install": "code --install-extension $(ls *.vsix | head -1)"
+	},
+	"devDependencies": {
+		"@types/node": "16.x",
+		"@types/vscode": "^1.74.0",
+		"@typescript-eslint/eslint-plugin": "^5.45.0",
+		"@typescript-eslint/parser": "^5.45.0",
+		"@vscode/test-electron": "^2.2.0",
+		"eslint": "^8.28.0",
+		"rimraf": "^5.0.0",
+		"typescript": "^4.9.4"
+	},
+	"__metadata": {
+		"installedTimestamp": 1757949063509,
+		"targetPlatform": "undefined",
+		"size": 2175305
+	}
+}

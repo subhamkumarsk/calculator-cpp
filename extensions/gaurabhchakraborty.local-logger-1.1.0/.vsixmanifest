@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+	<PackageManifest Version="2.0.0" xmlns="http://schemas.microsoft.com/developer/vsx-schema/2011" xmlns:d="http://schemas.microsoft.com/developer/vsx-schema-design/2011">
+		<Metadata>
+			<Identity Language="en-US" Id="local-logger" Version="1.1.0" Publisher="GaurabhChakraborty" />
+			<DisplayName>AI Usage Tracker - Team Productivity Analytics</DisplayName>
+			<Description xml:space="preserve">🚀 The #1 VS Code extension for automated AI productivity tracking. Transform manual CSV logging into professional team analytics. Tracks GitHub Copilot, Claude, Devin, Cursor &amp; more with real-time insights, automatic CSV export, and team collaboration features.</Description>
+			<Tags>ai tracking,productivity analytics,github copilot,claude ai,devin agent,cursor ai,team metrics,ai productivity,usage analytics,time tracking,developer tools,ai impact measurement,team collaboration,data export,csv automation,ai tools monitoring,development analytics,productivity insights,keybindings</Tags>
+			<Categories>Data Science,Other,Debuggers,Machine Learning</Categories>
+			<GalleryFlags>Public</GalleryFlags>
+			<Badges><Badge Link="https://marketplace.visualstudio.com/items?itemName=GaurabhChakraborty.local-logger" ImgUri="https://img.shields.io/vscode-marketplace/v/GaurabhChakraborty.local-logger?label=VS%20Code%20Marketplace&amp;logo=visual-studio-code" Description="VS Code Marketplace Version" />
+<Badge Link="https://marketplace.visualstudio.com/items?itemName=GaurabhChakraborty.local-logger" ImgUri="https://img.shields.io/vscode-marketplace/d/GaurabhChakraborty.local-logger?logo=visual-studio-code" Description="Total Downloads" />
+<Badge Link="https://github.com/gaurabh-chakraborty/local-logger-extension#supported-ai-tools" ImgUri="https://img.shields.io/badge/AI%20Tools-Supported-brightgreen" Description="Supports multiple AI tools" />
+<Badge Link="https://github.com/gaurabh-chakraborty/local-logger-extension#csv-export" ImgUri="https://img.shields.io/badge/Data%20Export-CSV-blue" Description="Exports to CSV format" /></Badges>
+			<Properties>
+				<Property Id="Microsoft.VisualStudio.Code.Engine" Value="^1.74.0" />
+				<Property Id="Microsoft.VisualStudio.Code.ExtensionDependencies" Value="" />
+				<Property Id="Microsoft.VisualStudio.Code.ExtensionPack" Value="" />
+				<Property Id="Microsoft.VisualStudio.Code.ExtensionKind" Value="workspace" />
+				<Property Id="Microsoft.VisualStudio.Code.LocalizedLanguages" Value="" />
+				
+				
+				<Property Id="Microsoft.VisualStudio.Services.Links.Source" Value="https://github.com/gaurabh-chakraborty/local-logger-extension.git" />
+				<Property Id="Microsoft.VisualStudio.Services.Links.Getstarted" Value="https://github.com/gaurabh-chakraborty/local-logger-extension.git" />
+				<Property Id="Microsoft.VisualStudio.Services.Links.GitHub" Value="https://github.com/gaurabh-chakraborty/local-logger-extension.git" />
+				<Property Id="Microsoft.VisualStudio.Services.Links.Support" Value="https://github.com/gaurabh-chakraborty/local-logger-extension/issues" />
+				<Property Id="Microsoft.VisualStudio.Services.Links.Learn" Value="https://github.com/gaurabh-chakraborty/local-logger-extension/blob/main/README.md" />
+				<Property Id="Microsoft.VisualStudio.Services.Branding.Color" Value="#0078d4" />
+				<Property Id="Microsoft.VisualStudio.Services.Branding.Theme" Value="dark" />
+				<Property Id="Microsoft.VisualStudio.Services.GitHubFlavoredMarkdown" Value="true" />
+				<Property Id="Microsoft.VisualStudio.Services.Content.Pricing" Value="Free"/>
+
+				<Property Id="Microsoft.VisualStudio.Services.EnableMarketplaceQnA" Value="true" />
+				
+			</Properties>
+			<License>extension/LICENSE.md</License>
+			<Icon>extension/images/icon.png</Icon>
+		</Metadata>
+		<Installation>
+			<InstallationTarget Id="Microsoft.VisualStudio.Code"/>
+		</Installation>
+		<Dependencies/>
+		<Assets>
+			<Asset Type="Microsoft.VisualStudio.Code.Manifest" Path="extension/package.json" Addressable="true" />
+			<Asset Type="Microsoft.VisualStudio.Services.Content.Details" Path="extension/README.md" Addressable="true" />
+<Asset Type="Microsoft.VisualStudio.Services.Content.Changelog" Path="extension/CHANGELOG.md" Addressable="true" />
+<Asset Type="Microsoft.VisualStudio.Services.Content.License" Path="extension/LICENSE.md" Addressable="true" />
+<Asset Type="Microsoft.VisualStudio.Services.Icons.Default" Path="extension/images/icon.png" Addressable="true" />
+		</Assets>
+	</PackageManifest>
